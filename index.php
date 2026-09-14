@@ -710,7 +710,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-1.jpg" alt="Featured Car 1">
+                <img src="js/img/car5.jpg" alt="Featured Car 1">
 
                 <h3>New Model</h3>
 
@@ -737,7 +737,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-2.jpg" alt="Featured Car 2">
+                <img src="js/img/car6.jpg" alt="Featured Car 2">
 
                 <h3>New Model</h3>
 
@@ -764,7 +764,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-3.jpg" alt="Featured Car 3">
+                <img src="js/img/car7.jpg" alt="Featured Car 3">
 
                 <h3>New Model</h3>
 
@@ -791,7 +791,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-4.jpg" alt="Featured Car 4">
+                <img src="js/img/car8.jpg" alt="Featured Car 4">
 
                 <h3>New Model</h3>
 
@@ -818,7 +818,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-5.jpg" alt="Featured Car 5">
+                <img src="js/img/car9.jpg" alt="Featured Car 5">
 
                 <h3>New Model</h3>
 
@@ -845,7 +845,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-6.jpg" alt="Featured Car 6">
+                <img src="js/img/car1.jpg" alt="Featured Car 6">
 
                 <h3>New Model</h3>
 
@@ -872,7 +872,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-7.jpg" alt="Featured Car 7">
+                <img src="js/img/car-2.jpg" alt="Featured Car 7">
 
                 <h3>New Model</h3>
 
@@ -899,7 +899,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/car-8.jpg" alt="Featured Car 8">
+                <img src="js/img/car-3.jpg" alt="Featured Car 8">
 
                 <h3>New Model</h3>
 
