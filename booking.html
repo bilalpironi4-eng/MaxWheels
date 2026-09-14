@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>MaxWheels | Book Service</title>
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Booking CSS -->
+
+    <link rel="stylesheet"
+        href="booking.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     BOOKING CONTAINER
+========================================================= -->
+
+<div class="booking-container">
+
+
+    <!-- =====================================================
+         BOOKING BOX
+    ====================================================== -->
+
+    <div class="booking-box">
+
+
+        <!-- LOGO -->
+
+        <a href="index.php"
+            class="logo">
+
+            <span>Max</span>wheels
+
+        </a>
+
+
+        <!-- HEADING -->
+
+        <h2>
+            Book A Service
+        </h2>
+
+
+        <p class="booking-subtitle">
+            Schedule your vehicle service
+        </p>
+
+
+        <!-- =================================================
+             BOOKING FORM
+        ================================================== -->
+
+        <form action="booking.php"
+            method="POST">
+
+
+            <!-- SERVICE -->
+
+            <div class="input-box">
+
+                <i class="fas fa-tools"></i>
+
+                <select
+                    name="service_name"
+                    required>
+
+                    <option value=""
+                        selected
+                        disabled>
+
+                        Select Service
+
+                    </option>
+
+                    <option value="Car Selling">
+                        Car Selling
+                    </option>
+
+                    <option value="Parts Repair">
+                        Parts Repair
+                    </option>
+
+                    <option value="Car Insurance">
+                        Car Insurance
+                    </option>
+
+                    <option value="Battery Replacement">
+                        Battery Replacement
+                    </option>
+
+                    <option value="Oil Change">
+                        Oil Change
+                    </option>
+
+                    <option value="24/7 Support">
+                        24/7 Support
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- VEHICLE -->
+
+            <div class="input-box">
+
+                <i class="fas fa-car"></i>
+
+                <input
+                    type="text"
+                    name="vehicle_name"
+                    placeholder="Enter Vehicle Name"
+                    required>
+
+            </div>
+
+
+            <!-- DATE -->
+
+            <div class="input-box">
+
+                <i class="fas fa-calendar"></i>
+
+                <input
+                    type="date"
+                    name="booking_date"
+                    id="booking_date"
+                    required>
+
+            </div>
+
+
+            <!-- TIME -->
+
+            <div class="input-box">
+
+                <i class="fas fa-clock"></i>
+
+                <input
+                    type="time"
+                    name="booking_time"
+                    required>
+
+            </div>
+
+
+            <!-- ADDRESS -->
+
+            <div class="input-box">
+
+                <i class="fas fa-location-dot"></i>
+
+                <input
+                    type="text"
+                    name="address"
+                    placeholder="Enter Your Address"
+                    required>
+
+            </div>
+
+
+            <!-- ADDITIONAL NOTES -->
+
+            <div class="textarea-box">
+
+                <i class="fas fa-message"></i>
+
+                <textarea
+                    name="notes"
+                    placeholder="Additional Notes"></textarea>
+
+            </div>
+
+
+            <!-- PICKUP -->
+
+            <div class="pickup-option">
+
+                <input
+                    type="checkbox"
+                    name="pickup_required"
+                    id="pickup_required">
+
+                <label for="pickup_required">
+
+                    <i class="fas fa-truck"></i>
+
+                    Pickup Required
+
+                </label>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="btn">
+
+                <i class="fas fa-calendar-check"></i>
+
+                Book Service
+
+            </button>
+
+
+        </form>
+
+
+        <!-- BACK HOME -->
+
+        <a href="index.php"
+            class="back-home">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     DATE VALIDATION
+========================================================= -->
+
+<script>
+
+const bookingDate =
+    document.getElementById("booking_date");
+
+
+const today =
+    new Date().toISOString().split("T")[0];
+
+
+bookingDate.setAttribute(
+    "min",
+    today
+);
+
+</script>
+
+
+</body>
+
+</html>

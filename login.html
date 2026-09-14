@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>MaxWheels | Login</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet"
+        href="login.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     LOGIN CONTAINER
+========================================================= -->
+
+<div class="login-container">
+
+
+    <!-- =====================================================
+         LOGIN BOX
+    ====================================================== -->
+
+    <div class="login-box">
+
+
+        <!-- Logo -->
+
+        <a href="index.php"
+            class="logo">
+
+            <span>Max</span>wheels
+
+        </a>
+
+
+        <!-- Heading -->
+
+        <h2>
+            Welcome Back
+        </h2>
+
+
+        <!-- Subtitle -->
+
+        <p class="login-subtitle">
+            Login to your MaxWheels account
+        </p>
+
+
+        <!-- =================================================
+             LOGIN FORM
+        ================================================== -->
+
+        <form action="login.php"
+            method="POST"
+            class="login-form">
+
+
+            <!-- Email -->
+
+            <div class="input-box">
+
+                <i class="far fa-envelope"></i>
+
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+            <!-- Password -->
+
+            <div class="input-box">
+
+                <i class="fas fa-lock"></i>
+
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required>
+
+                <i
+                    class="fas fa-eye toggle-password"
+                    id="togglePassword">
+                </i>
+
+            </div>
+
+
+            <!-- Remember + Forgot -->
+
+            <div class="remember">
+
+                <input
+                    type="checkbox"
+                    id="remember"
+                    name="remember">
+
+                <label for="remember">
+                    Remember me
+                </label>
+
+                <a href="#"
+                    class="forgot-password">
+
+                    Forgot Password?
+
+                </a>
+
+            </div>
+
+
+            <!-- Login Button -->
+
+            <button
+                type="submit"
+                class="btn">
+
+                <i class="fas fa-sign-in-alt"></i>
+
+                Login
+
+            </button>
+
+
+        </form>
+
+
+        <!-- =================================================
+             REGISTER
+        ================================================== -->
+
+        <p class="register-text">
+
+            Don't have an account?
+
+            <a href="register.html">
+                Register Now
+            </a>
+
+        </p>
+
+
+        <!-- =================================================
+             BACK HOME
+        ================================================== -->
+
+        <a href="index.php"
+            class="back-home">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PASSWORD TOGGLE JS
+========================================================= -->
+
+<script>
+
+const togglePassword =
+    document.getElementById("togglePassword");
+
+const password =
+    document.getElementById("password");
+
+
+togglePassword.addEventListener("click", function () {
+
+    if (password.type === "password") {
+
+        password.type = "text";
+
+        this.classList.remove("fa-eye");
+
+        this.classList.add("fa-eye-slash");
+
+    } else {
+
+        password.type = "password";
+
+        this.classList.remove("fa-eye-slash");
+
+        this.classList.add("fa-eye");
+
+    }
+
+});
+
+</script>
+
+
+</body>
+
+</html>

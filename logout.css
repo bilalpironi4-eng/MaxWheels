@@ -1,0 +1,341 @@
+/* =========================================================
+   MAXWHEELS LOGOUT PAGE
+   MAIN CSS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+
+:root {
+    --yellow: #f9d806;
+    --light-yellow: #ffee80;
+    --black: #130f40;
+    --light-color: #666;
+    --white: #fff;
+    --light-bg: #f5f5f5;
+
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+    --box-shadow:
+        0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================================
+   HTML
+========================================================= */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    min-height: 100vh;
+    background: var(--light-bg);
+}
+
+
+/* =========================================================
+   LOGOUT CONTAINER
+========================================================= */
+
+.logout-container {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 7%;
+
+    background:
+        linear-gradient(
+            rgba(19, 15, 64, 0.88),
+            rgba(19, 15, 64, 0.88)
+        ),
+        url('js/img/letter-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   LOGOUT BOX
+========================================================= */
+
+.logout-box {
+    width: 48rem;
+    max-width: 100%;
+
+    padding: 3.5rem 4rem;
+
+    background: var(--white);
+
+    border-radius: 1.5rem;
+
+    box-shadow: var(--box-shadow);
+
+    text-align: center;
+
+    animation: logoutBox 0.6s ease;
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes logoutBox {
+
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logout-box .logo {
+    display: inline-block;
+
+    margin-bottom: 2rem;
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: var(--black);
+}
+
+
+.logout-box .logo span {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   LOGOUT ICON
+========================================================= */
+
+.logout-icon {
+    width: 8rem;
+    height: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 2rem;
+
+    background: var(--light-yellow);
+
+    border-radius: 50%;
+
+    color: var(--black);
+
+    font-size: 3rem;
+
+    transition: 0.3s ease;
+}
+
+
+.logout-icon:hover {
+    background: var(--yellow);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.logout-box h2 {
+    margin-bottom: 1rem;
+
+    font-size: 2.8rem;
+    font-weight: 600;
+
+    color: var(--black);
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.logout-box p {
+    margin-bottom: 2.5rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BUTTON CONTAINER
+========================================================= */
+
+.logout-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.2rem;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+========================================================= */
+
+.logout-buttons .btn {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.8rem;
+
+    padding: 1.3rem 2rem;
+
+    border-radius: 0.7rem;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+========================================================= */
+
+.cancel-btn {
+    background: var(--light-bg);
+
+    color: var(--black);
+
+    border: var(--border);
+}
+
+
+.cancel-btn:hover {
+    background: var(--black);
+
+    color: var(--white);
+
+    transform: translateY(-0.2rem);
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+========================================================= */
+
+.logout-btn {
+    background: var(--yellow);
+
+    color: var(--black);
+}
+
+
+.logout-btn:hover {
+    background: var(--black);
+
+    color: var(--white);
+
+    transform: translateY(-0.2rem);
+
+    box-shadow:
+        0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   BUTTON ICON
+========================================================= */
+
+.logout-buttons .btn i {
+    font-size: 1.4rem;
+}
+
+
+/* =========================================================
+   BACK HOME
+========================================================= */
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.7rem;
+
+    margin-top: 2rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+
+    transition: 0.3s ease;
+}
+
+
+.back-home i {
+    font-size: 1.2rem;
+}
+
+
+.back-home:hover {
+    color: var(--black);
+
+    transform: translateX(-0.3rem);
+}

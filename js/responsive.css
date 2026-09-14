@@ -1,0 +1,298 @@
+/* =========================================================
+   RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 4rem 5%;
+    }
+
+    .header {
+        padding: 1.5rem 5%;
+    }
+
+    .header .navbar {
+        gap: 1.5rem;
+    }
+
+    .home h1 {
+        font-size: 4.5rem;
+    }
+
+    .icons-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 52%;
+    }
+
+    section {
+        padding: 4rem 3%;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    .header {
+        padding: 1.5rem 3%;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .header .navbar {
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        display: block;
+
+        background: var(--white);
+
+        border-top: var(--border);
+
+        padding: 1rem 0;
+
+        transform: scaleY(0);
+        transform-origin: top;
+
+        opacity: 0;
+        pointer-events: none;
+
+        transition: .2s linear;
+    }
+
+    .header .navbar.active {
+        transform: scaleY(1);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .header .navbar a {
+
+        display: block;
+
+        padding: 1.2rem 5%;
+
+        font-size: 1.7rem;
+
+        border-bottom: var(--border);
+    }
+
+    #login-btn .user-name {
+        display: none;
+    }
+
+    #login-btn .btn {
+        padding: .8rem 1.5rem;
+    }
+
+    .home {
+        min-height: 65vh;
+    }
+
+    .home h1 {
+        font-size: 4rem;
+    }
+
+    .home img {
+        width: 95%;
+    }
+
+    .icons-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem 5%;
+    }
+
+    .services .box-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container .map,
+    .contact-form {
+        min-height: 40rem;
+    }
+
+    .contact-container .map iframe {
+        min-height: 40rem;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3.2rem;
+    }
+
+    .header .logo {
+        font-size: 2.5rem;
+    }
+
+    #login-btn .btn {
+        font-size: 1.3rem;
+        padding: .7rem 1.2rem;
+    }
+
+    .home {
+        min-height: 60vh;
+    }
+
+    .home h1 {
+        font-size: 3.3rem;
+    }
+
+    .home img {
+        margin-bottom: 2rem;
+    }
+
+    .icons-container {
+        grid-template-columns: 1fr;
+    }
+
+    .icons-container .icons {
+        justify-content: center;
+    }
+
+    .services .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services .box {
+        min-height: 28rem;
+    }
+
+    .newsletter {
+        padding: 5rem 5%;
+    }
+
+    .newsletter-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .newsletter-content form {
+        flex-direction: column;
+    }
+
+    .newsletter-content form input[type="email"],
+    .newsletter-content form input[type="submit"] {
+        width: 100%;
+    }
+
+    .newsletter-content form input[type="submit"] {
+        padding: 1.3rem 2rem;
+    }
+
+    .contact-form {
+        padding: 2.5rem 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 4rem 5% 2rem;
+    }
+
+}
+
+
+/* =========================================================
+   450px
+========================================================= */
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 48%;
+    }
+
+    .header {
+        padding: 1.3rem 4%;
+    }
+
+    .header .logo {
+        font-size: 2.2rem;
+    }
+
+    #login-btn .btn {
+        padding: .7rem 1rem;
+    }
+
+    .home h1 {
+        font-size: 2.8rem;
+    }
+
+    .home img {
+        width: 100%;
+    }
+
+    .vehicles-slider .box {
+        padding: 1.5rem;
+    }
+
+    .featured-slider .box {
+        min-height: 35rem;
+    }
+
+    .reviews-slider .box {
+        min-height: 31rem;
+    }
+
+    .contact-container .map,
+    .contact-form {
+        min-height: 35rem;
+    }
+
+    .contact-container .map iframe {
+        min-height: 35rem;
+    }
+
+}

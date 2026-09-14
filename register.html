@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>MaxWheels - Register</title>
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONT - POPPINS
+    ====================================================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         REGISTER CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="register.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     REGISTER CONTAINER
+========================================================= -->
+
+<div class="register-container">
+
+
+    <!-- =====================================================
+         REGISTER BOX
+    ====================================================== -->
+
+    <div class="register-box">
+
+
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
+        <a href="index.php"
+            class="logo">
+
+            <span>Max</span>wheels
+
+        </a>
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <h2>
+            Create Account
+        </h2>
+
+
+        <p class="register-subtitle">
+            Create your Vehicle Service account
+        </p>
+
+
+        <!-- =================================================
+             REGISTER FORM
+        ================================================== -->
+
+        <form action="register.php"
+            method="POST">
+
+
+            <!-- =================================================
+                 NAME
+            ================================================== -->
+<!-- Login -->
+<form action="login.php" method="POST">
+
+<!-- Register -->
+<form action="register.php" method="POST">
+
+<!-- Register page link -->
+<a href="register.html">Register Now</a>
+
+<!-- Home -->
+<a href="index.php">Back to Home</a>
+            <div class="input-box">
+
+                <i class="far fa-user"></i>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required>
+
+            </div>
+
+
+            <!-- =================================================
+                 EMAIL
+            ================================================== -->
+
+            <div class="input-box">
+
+                <i class="far fa-envelope"></i>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+            <!-- =================================================
+                 PHONE
+            ================================================== -->
+
+            <div class="input-box">
+
+                <i class="fas fa-phone"></i>
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                    maxlength="15"
+                    required>
+
+            </div>
+
+
+            <!-- =================================================
+                 PASSWORD
+            ================================================== -->
+
+            <div class="input-box">
+
+                <i class="fas fa-lock"></i>
+
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Create password"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+
+                <i
+                    class="fas fa-eye toggle-password"
+                    id="togglePassword">
+                </i>
+
+            </div>
+
+
+            <!-- =================================================
+                 CONFIRM PASSWORD
+            ================================================== -->
+
+            <div class="input-box">
+
+                <i class="fas fa-lock"></i>
+
+                <input
+                    type="password"
+                    name="confirm_password"
+                    id="confirm_password"
+                    placeholder="Confirm password"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+
+                <i
+                    class="fas fa-eye toggle-password"
+                    id="toggleConfirmPassword">
+                </i>
+
+            </div>
+
+
+            <!-- =================================================
+                 TERMS
+            ================================================== -->
+
+            <div class="terms">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="terms"
+                        required>
+
+                    <span>
+
+                        I agree to the
+
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- =================================================
+                 REGISTER BUTTON
+            ================================================== -->
+
+            <button
+                type="submit"
+                class="btn">
+
+                <i class="fas fa-user-plus"></i>
+
+                Create Account
+
+            </button>
+
+
+        </form>
+
+
+        <!-- =================================================
+             LOGIN LINK
+        ================================================== -->
+
+        <p class="login-text">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </p>
+
+
+        <!-- =================================================
+             BACK HOME
+        ================================================== -->
+
+        <a href="index.php"
+            class="back-home">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PASSWORD TOGGLE JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const togglePassword =
+    document.getElementById("togglePassword");
+
+const password =
+    document.getElementById("password");
+
+
+togglePassword.addEventListener("click", function () {
+
+    if (password.type === "password") {
+
+        password.type = "text";
+
+        this.classList.remove("fa-eye");
+
+        this.classList.add("fa-eye-slash");
+
+    } else {
+
+        password.type = "password";
+
+        this.classList.remove("fa-eye-slash");
+
+        this.classList.add("fa-eye");
+
+    }
+
+});
+
+
+const toggleConfirmPassword =
+    document.getElementById("toggleConfirmPassword");
+
+const confirmPassword =
+    document.getElementById("confirm_password");
+
+
+toggleConfirmPassword.addEventListener("click", function () {
+
+    if (confirmPassword.type === "password") {
+
+        confirmPassword.type = "text";
+
+        this.classList.remove("fa-eye");
+
+        this.classList.add("fa-eye-slash");
+
+    } else {
+
+        confirmPassword.type = "password";
+
+        this.classList.remove("fa-eye-slash");
+
+        this.classList.add("fa-eye");
+
+    }
+
+});
+
+</script>
+
+
+</body>
+
+</html>

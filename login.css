@@ -1,0 +1,486 @@
+
+/* =========================================================
+   MAXWHEELS LOGIN PAGE
+   MAIN CSS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+
+:root {
+    --yellow: #f9d806;
+    --light-yellow: #ffee80;
+    --black: #130f40;
+    --light-color: #666;
+    --white: #fff;
+    --light-bg: #f5f5f5;
+
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+    --box-shadow:
+        0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================================
+   HTML
+========================================================= */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    min-height: 100vh;
+    background: var(--light-bg);
+}
+
+
+/* =========================================================
+   LOGIN CONTAINER
+========================================================= */
+
+.login-container {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 7%;
+
+    /* BACKGROUND IMAGE */
+    background:
+        linear-gradient(
+            rgba(19, 15, 64, 0.88),
+            rgba(19, 15, 64, 0.88)
+        ),
+        url('js/img/letter-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   LOGIN BOX
+========================================================= */
+
+.login-box {
+    width: 48rem;
+    max-width: 100%;
+
+    padding: 3.5rem 4rem;
+
+    background: var(--white);
+
+    border-radius: 1.5rem;
+
+    box-shadow: var(--box-shadow);
+
+    text-align: center;
+
+    animation: loginBox 0.6s ease;
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes loginBox {
+
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.login-box .logo {
+    display: inline-block;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: var(--black);
+}
+
+
+.login-box .logo span {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.login-box h2 {
+    margin-bottom: 0.5rem;
+
+    font-size: 2.8rem;
+    font-weight: 600;
+
+    color: var(--black);
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.login-subtitle {
+    margin-bottom: 2.5rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.login-box form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   INPUT BOX
+========================================================= */
+
+.login-box .input-box {
+    position: relative;
+
+    width: 100%;
+    height: 5.2rem;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1.4rem;
+
+    background: var(--white);
+
+    border: var(--border);
+    border-radius: 0.7rem;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   LEFT ICON
+========================================================= */
+
+.login-box .input-box > i:first-child {
+    width: 5rem;
+
+    flex-shrink: 0;
+
+    font-size: 1.7rem;
+
+    color: var(--yellow);
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.login-box .input-box input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 1.2rem 0 0;
+
+    font-size: 1.4rem;
+
+    color: var(--black);
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
+.login-box .input-box input::placeholder {
+    color: #999;
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.login-box .input-box:focus-within {
+    border-color: var(--yellow);
+
+    box-shadow:
+        0 0 0 0.2rem rgba(249, 216, 6, 0.15);
+}
+
+
+/* =========================================================
+   PASSWORD EYE
+========================================================= */
+
+.login-box .input-box .toggle-password {
+    position: absolute;
+
+    right: 1.5rem;
+
+    width: auto;
+
+    font-size: 1.6rem;
+
+    color: var(--light-color);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.login-box .input-box .toggle-password:hover {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   REMEMBER ME
+========================================================= */
+
+.remember {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    margin: 1rem 0 2rem;
+
+    text-align: left;
+
+    font-size: 1.3rem;
+
+    color: var(--light-color);
+
+    cursor: pointer;
+}
+
+
+.remember input {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    accent-color: var(--yellow);
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   FORGOT PASSWORD
+========================================================= */
+
+.forgot-password {
+    margin-left: auto;
+
+    color: var(--black);
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.forgot-password:hover {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.login-box .btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.8rem;
+
+    padding: 1.3rem 2rem;
+
+    background: var(--yellow);
+
+    color: var(--black);
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    border-radius: 0.7rem;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.login-box .btn i {
+    font-size: 1.5rem;
+}
+
+
+.login-box .btn:hover {
+    background: var(--black);
+
+    color: var(--white);
+
+    transform: translateY(-0.2rem);
+
+    box-shadow:
+        0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   REGISTER TEXT
+========================================================= */
+
+.register-text {
+    margin-top: 2.3rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+}
+
+
+.register-text a {
+    color: var(--black);
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.register-text a:hover {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   BACK HOME
+========================================================= */
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.7rem;
+
+    margin-top: 1.8rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+
+    transition: 0.3s ease;
+}
+
+
+.back-home i {
+    font-size: 1.2rem;
+}
+
+
+.back-home:hover {
+    color: var(--black);
+
+    transform: translateX(-0.3rem);
+}
+
+
+/* =========================================================
+   ERROR / SUCCESS MESSAGE
+========================================================= */
+
+.form-message {
+    margin-bottom: 1.5rem;
+
+    padding: 1rem;
+
+    font-size: 1.3rem;
+
+    border-radius: 0.5rem;
+}
+
+
+.form-message.error {
+    color: #b91c1c;
+
+    background: #fee2e2;
+
+    border: 0.1rem solid #fecaca;
+}
+
+
+.form-message.success {
+    color: #166534;
+
+    background: #dcfce7;
+
+    border: 0.1rem solid #bbf7d0;
+}

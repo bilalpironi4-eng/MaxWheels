@@ -1,0 +1,647 @@
+
+/* =========================================================
+   MAXWHEELS REGISTER PAGE
+   MAIN CSS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+
+:root {
+    --yellow: #f9d806;
+    --light-yellow: #ffee80;
+    --black: #130f40;
+    --light-color: #666;
+    --white: #fff;
+    --light-bg: #f5f5f5;
+
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+    --box-shadow:
+        0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background: var(--light-bg);
+}
+
+
+/* =========================================================
+   REGISTER CONTAINER
+========================================================= */
+
+.register-container {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 7%;
+
+    background:
+        linear-gradient(
+            rgba(19, 15, 64, 0.88),
+            rgba(19, 15, 64, 0.88)
+        ),
+        url('js/img/letter-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   REGISTER BOX
+========================================================= */
+
+.register-box {
+    width: 48rem;
+    max-width: 100%;
+
+    padding: 3.5rem 4rem;
+
+    background: var(--white);
+
+    border-radius: 1.5rem;
+
+    box-shadow: var(--box-shadow);
+
+    text-align: center;
+
+    animation: registerBox 0.6s ease;
+}
+
+
+/* =========================================================
+   REGISTER BOX ANIMATION
+========================================================= */
+
+@keyframes registerBox {
+
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.register-box .logo {
+    display: inline-block;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: var(--black);
+}
+
+
+.register-box .logo span {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.register-box h2 {
+    margin-bottom: 0.5rem;
+
+    font-size: 2.8rem;
+    font-weight: 600;
+
+    color: var(--black);
+}
+
+
+.register-subtitle {
+    margin-bottom: 2.5rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.register-box form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   INPUT BOX
+========================================================= */
+
+.register-box .input-box {
+    position: relative;
+
+    width: 100%;
+    height: 5.2rem;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1.4rem;
+
+    background: var(--white);
+
+    border: var(--border);
+    border-radius: 0.7rem;
+
+    transition: 0.3s ease;
+}
+
+
+/* Left Icon */
+
+.register-box .input-box > i:first-child {
+    width: 5rem;
+
+    flex-shrink: 0;
+
+    font-size: 1.7rem;
+
+    color: var(--yellow);
+
+    text-align: center;
+}
+
+
+/* Input */
+
+.register-box .input-box input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 1.2rem 0 0;
+
+    font-size: 1.4rem;
+
+    color: var(--black);
+
+    background: transparent;
+}
+
+
+/* Placeholder */
+
+.register-box .input-box input::placeholder {
+    color: #999;
+}
+
+
+/* Focus */
+
+.register-box .input-box:focus-within {
+    border-color: var(--yellow);
+
+    box-shadow:
+        0 0 0 0.2rem rgba(249, 216, 6, 0.15);
+}
+
+
+/* =========================================================
+   PASSWORD TOGGLE
+========================================================= */
+
+.register-box .input-box .toggle-password {
+    position: absolute;
+
+    right: 1.5rem;
+
+    width: auto;
+
+    font-size: 1.6rem;
+
+    color: var(--light-color);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.register-box .input-box .toggle-password:hover {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   TERMS
+========================================================= */
+
+.terms {
+    margin: 1rem 0 2rem;
+
+    text-align: left;
+}
+
+
+.terms label {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 0.8rem;
+
+    font-size: 1.3rem;
+    line-height: 1.6;
+
+    color: var(--light-color);
+
+    cursor: pointer;
+}
+
+
+.terms input {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    margin-top: 0.2rem;
+
+    flex-shrink: 0;
+
+    accent-color: var(--yellow);
+
+    cursor: pointer;
+}
+
+
+.terms a {
+    color: var(--black);
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.terms a:hover {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   REGISTER BUTTON
+========================================================= */
+
+.register-box .btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.8rem;
+
+    padding: 1.3rem 2rem;
+
+    background: var(--yellow);
+
+    color: var(--black);
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    border-radius: 0.7rem;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.register-box .btn i {
+    font-size: 1.5rem;
+}
+
+
+.register-box .btn:hover {
+    background: var(--black);
+
+    color: var(--white);
+
+    transform: translateY(-0.2rem);
+
+    box-shadow:
+        0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   LOGIN TEXT
+========================================================= */
+
+.login-text {
+    margin-top: 2.3rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+}
+
+
+.login-text a {
+    color: var(--black);
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.login-text a:hover {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   BACK HOME
+========================================================= */
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.7rem;
+
+    margin-top: 1.8rem;
+
+    font-size: 1.4rem;
+
+    color: var(--light-color);
+
+    transition: 0.3s ease;
+}
+
+
+.back-home i {
+    font-size: 1.2rem;
+}
+
+
+.back-home:hover {
+    color: var(--black);
+
+    transform: translateX(-0.3rem);
+}
+
+
+/* =========================================================
+   ERROR / SUCCESS MESSAGE
+========================================================= */
+
+.form-message {
+    margin-bottom: 1.5rem;
+
+    padding: 1rem;
+
+    font-size: 1.3rem;
+
+    border-radius: 0.5rem;
+}
+
+
+.form-message.error {
+    color: #b91c1c;
+
+    background: #fee2e2;
+
+    border: 0.1rem solid #fecaca;
+}
+
+
+.form-message.success {
+    color: #166534;
+
+    background: #dcfce7;
+
+    border: 0.1rem solid #bbf7d0;
+}
+
+
+/* =========================================================
+   MAXWHEELS REGISTER PAGE
+   RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+
+    /* Register Container */
+
+    .register-container {
+        padding: 2rem;
+    }
+
+
+    /* Register Box */
+
+    .register-box {
+        width: 48rem;
+
+        padding: 3rem 2.5rem;
+    }
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+
+    /* Register Container */
+
+    .register-container {
+        padding: 1.5rem;
+    }
+
+
+    /* Register Box */
+
+    .register-box {
+        width: 100%;
+
+        padding: 2.8rem 2rem;
+
+        border-radius: 1rem;
+    }
+
+
+    /* Logo */
+
+    .register-box .logo {
+        font-size: 2.7rem;
+    }
+
+
+    /* Heading */
+
+    .register-box h2 {
+        font-size: 2.4rem;
+    }
+
+
+    /* Subtitle */
+
+    .register-subtitle {
+        font-size: 1.3rem;
+    }
+
+
+    /* Input */
+
+    .register-box .input-box {
+        height: 5rem;
+    }
+
+
+    .register-box .input-box input {
+        font-size: 1.3rem;
+    }
+
+
+    /* Terms */
+
+    .terms label {
+        font-size: 1.2rem;
+    }
+
+
+    /* Button */
+
+    .register-box .btn {
+        font-size: 1.5rem;
+    }
+
+
+    /* Login Text */
+
+    .login-text {
+        font-size: 1.3rem;
+    }
+
+
+    /* Back Home */
+
+    .back-home {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .register-box {
+        padding: 2.5rem 1.5rem;
+    }
+
+
+    .register-box .logo {
+        font-size: 2.5rem;
+    }
+
+
+    .register-box h2 {
+        font-size: 2.2rem;
+    }
+
+
+    .register-box .input-box {
+        height: 4.8rem;
+    }
+
+
+    .register-box .input-box > i:first-child {
+        width: 4.2rem;
+
+        font-size: 1.5rem;
+    }
+
+
+    .register-box .input-box input {
+        font-size: 1.2rem;
+    }
+
+
+    .terms label {
+        font-size: 1.1rem;
+    }
+
+
+    .register-box .btn {
+        padding: 1.1rem 1.5rem;
+
+        font-size: 1.4rem;
+    }
+
+}

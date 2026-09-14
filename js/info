@@ -1,0 +1,189 @@
+
+table:
+max_vehicle
+│
+├── users
+├── bookings
+└── contacts
+Users Table:
+│
+├── id
+├── name
+├── email
+├── phone
+├── password
+└── created_at
+Bookings Table:
+│
+├── id
+├── user_id
+├── service_name
+├── vehicle_name
+├── booking_date
+├── booking_time
+├── address
+├── notes
+├── pickup_required
+└── created_at
+contacts:
+│
+├── id
+├── name
+├── email
+├── subject
+├── message
+└── created_at
+ Login / Registration Flow:
+                   ┌─────────────────┐
+                  │  register.html  │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │  register.php   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ max_vehicle     │
+                  │     users       │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │    login.html   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │    login.php    │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │   PHP Session   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │    index.php    │
+                  └─────────────────┘
+                  Booking Flow:
+                                    ┌─────────────────┐
+                  │    index.php    │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Popular Vehicles│
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │  Book Service   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │  booking.html   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │   booking.php   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Login Session   │
+                  │     Check       │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ max_vehicle     │
+                  │    bookings     │
+                  └─────────────────┘
+                  Contact Flow:
+                                    ┌─────────────────┐
+                  │    index.php    │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │  Contact Form   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │   contact.php   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ max_vehicle     │
+                  │    contacts     │
+                  └─────────────────┘
+                  Logout Flow:
+                                    ┌─────────────────┐
+                  │    index.php    │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │   logout.html   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │    logout.php   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Session Destroy │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │    index.php    │
+                  └─────────────────┘
+                   Complete Project Flow Chart
+                                            ┌──────────────────────┐
+                         │      MAXWHEELS       │
+                         │       index.php      │
+                         └──────────┬───────────┘
+                                    │
+          ┌─────────────────────────┼─────────────────────────┐
+          │                         │                         │
+          ▼                         ▼                         ▼
+     REGISTER                     LOGIN                   FEATURES
+          │                         │                         │
+          ▼                         ▼             ┌───────────┼───────────┐
+   register.html              login.html          │           │           │
+          │                         │              ▼           ▼           ▼
+          ▼                         ▼          Vehicles    Services    Reviews
+   register.php                login.php
+          │                         │
+          ▼                         ▼
+   max_vehicle.users           PHP Session
+                                    │
+                                    ▼
+                               index.php
+                                    │
+                    ┌───────────────┼────────────────┐
+                    │               │                │
+                    ▼               ▼                ▼
+                 Booking         Contact          Logout
+                    │               │                │
+                    ▼               ▼                ▼
+              booking.html    contact.php      logout.html
+                    │               │                │
+                    ▼               ▼                ▼
+              booking.php   max_vehicle       logout.php
+                    │          .contacts             │
+                    ▼                                ▼
+              max_vehicle                     Session Destroy
+               .bookings                            │
+                                                    ▼
+                                               index.php
