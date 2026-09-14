@@ -187,3 +187,53 @@ contacts:
                .bookings                            │
                                                     ▼
                                                index.php
+                                               MaxWheels/
+│
+├── index.php
+│
+├── login.html
+├── login.php
+├── login.css
+│
+├── register.html
+├── register.php
+├── register.css
+│
+├── logout.html
+├── logout.php
+├── logout.css
+│
+├── booking.html
+├── booking.php
+├── booking.css
+│
+├── contact.php
+│
+├── styel.css
+├── responsive.css
+│
+└── js/
+    │
+    ├── script.js
+    │
+    └── img/
+        ├── home-img.png
+        ├── car1.jpg
+        ├── car2.jpg
+        ├── car3.jpg
+        ├── car4.jpg
+        ├── car5.jpg
+        ├── car-1.jpg
+        ├── car-2.jpg
+        ├── car-3.jpg
+        ├── car-4.jpg
+        ├── car-5.jpg
+        ├── car-6.jpg
+        ├── car-7.jpg
+        ├── car-8.jpg
+        ├── pic-1.jpg
+        ├── pic-2.jpg
+        ├── pic-3.jpg
+        ├── pic-4.jpg
+        ├── pic-5.jpg
+        └── pic-6.jpg
