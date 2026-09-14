@@ -993,7 +993,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/pic-1.jpg" alt="Client">
+                <img src="js/img/cli1.jpg" alt="Client">
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur,
@@ -1023,7 +1023,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/pic-2.jpg" alt="Client">
+                <img src="js/img/cli2.jpg" alt="Client">
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur,
@@ -1053,7 +1053,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/pic-3.jpg" alt="Client">
+                <img src="js/img/cli3.jpg" alt="Client">
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur,
@@ -1083,7 +1083,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/pic-4.jpg" alt="Client">
+                <img src="js/img/cli4.jpg" alt="Client">
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur,
@@ -1113,7 +1113,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/pic-5.jpg" alt="Client">
+                <img src="js/img/cli5.jpg" alt="Client">
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur,
@@ -1143,7 +1143,7 @@ session_start();
 
             <div class="swiper-slide box">
 
-                <img src="js/img/pic-6.jpg" alt="Client">
+                <img src="js/img/cli6.jpg" alt="Client">
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur,
